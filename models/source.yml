@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: RAW_DEV
+    schema: EMPLOYEE
+    tables:
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS
+      - name: src_orders
+      - name : src_events
+      - name: raw_employee
+      - name: RAW_CUST_TEST
+        config:
+            loaded_at_field: _loaded_at
+            freshness:
+              warn_after: {count: 10, period: hour}
+              error_after: {count: 12, period: hour}
