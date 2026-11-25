@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: raw_data
     database: "{{ 'PROD_RAW' if target.name | lower == 'prod' else 'RAW_DEV' }}"
-    schema: STAGE
+    schema: EMPLOYEE
     tables:
       - name: RAW_CUSTOMERS
       - name: RAW_ORDERS
