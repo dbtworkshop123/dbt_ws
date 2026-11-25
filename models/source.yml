@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: RAW_DEV
+    schema: EMPLOYEE
+    tables:
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS
+      - name: RAW_EMPLOYEE

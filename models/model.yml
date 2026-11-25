@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_customer
+    description: stage customer data
+    columns:
+      - name: cust_id
+        description: custmer is
+        data_tests:
+          - unique
+      - name: cust_name
+        data_tests:
+          - not_null
+      - name: ZIP
+        data_tests:
+          - not_null
+
+  - name: stg_orders
+    description: stage order data
+    columns:
+      - name: ORDER_ID
+        data_tests:
+          - unique
