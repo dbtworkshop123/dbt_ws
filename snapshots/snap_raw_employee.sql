@@ -5,7 +5,6 @@
         unique_key='EMPID',
         strategy='timestamp',
         updated_at='CREATED_DATE'
-      
     )
 }}
 
@@ -20,6 +19,6 @@ select
     STATE,
     COUNTRY,
     CREATED_DATE
-from {{ source('raw_data', 'raw_employee') }}
+from {{ source('raw_data', 'RAW_EMPLOYEE') }}
 
 {% endsnapshot %}

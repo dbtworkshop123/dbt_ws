@@ -1,0 +1,12 @@
+version: 2
+snapshots:
+  - name: snap_raw_employee
+    description: employee snapshot with timestamp strategy
+    columns:
+      - name: EMPID
+      - name: ENAME
+      - name: ADDRESS
+      - name: CITY
+      - name: STATE
+      - name: COUNTRY
+      - name: CREATED_DATE

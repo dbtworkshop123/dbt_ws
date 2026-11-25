@@ -1,0 +1,7 @@
+version: 2
+seeds:
+  - name: country
+    description: Country data for lookup
+    columns:
+      - name: country_id
+      - name: country_name

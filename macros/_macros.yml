@@ -1,0 +1,10 @@
+version: 2
+
+macros:
+  - name: add_audit_columns
+    description: Generating Audit columns(user_name,run_id modelcreated)
+  - name: pivot_status_counts
+    description: Count he status wise order counts
+    arguments:
+      - name: status_column
+     
